@@ -13,22 +13,36 @@ body {
 
 header {
     background-image: linear-gradient(to bottom, grey, rgba(248, 247, 247, 0.781));
+    height: 100px;
     padding: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+header h1 {
+    padding: 10px;
 }
 
 nav {
     background-color: rgba(248, 247, 247, 0.781);
     text-align: center;
     height: 30px;
-    text-indent: 
 }
 
 nav a{
-    margin-bottom: 0px;
-    border: 1px solid black;  
+    margin: 10px;
+    padding: 5px;
+    background-color: white;
+    color: black;     
     text-decoration: none; 
+}
+
+nav a.home {
+    border: 0px;
+}
+
+nav a.home:hover {
+    background-color: white;
 }
 
 nav a:hover {
@@ -46,6 +60,26 @@ article {
     border-radius: 20px;
     width: 1000px;
     height: 1000px;
+}
+
+article h2 {
+    padding: 50px;
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 20px 20px 0px 0px;
+}
+
+article a {  
+    color: black;     
+    text-decoration: none;    
+}
+
+article p {
+    padding: 50px;    
+} 
+
+article a:hover {
+    color: white;
+    background-color: black;
 }
 
 footer {
