@@ -13,7 +13,7 @@ body {
 
 header {
     background-image: linear-gradient(to bottom, grey, rgba(248, 247, 247, 0.781));
-    height: 100px;
+    max-height: 100px;
     padding: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -26,12 +26,15 @@ header h1 {
 nav {
     background-color: rgba(248, 247, 247, 0.781);
     text-align: center;
-    height: 30px;
+    /* usar padding em vez de height para maior espaçamento vertical */
+    padding: 15px 0;
+    /* height: 70px; */
 }
 
 nav a{
-    margin: 10px;
-    padding: 5px;
+    margin: 10px 12px;
+    padding: 12px 16px; /* aumenta a "altura" visual entre os links */
+    display: inline-block; /* garante que o padding vertical funcione */
     background-color: white;
     color: black;     
     text-decoration: none; 
@@ -52,18 +55,28 @@ nav a:hover {
 
 main {
     background-color: rgba(173, 173, 173, 0.781);
+    text-align: center;
+}
+
+main img {
+    max-width: 500px;
+    padding: 20px;
+
 }
 
 article {
     margin: auto;
     background-color: white;
+    text-align: center;
     border-radius: 20px;
-    width: 1000px;
+    max-width: 1000px;
     height: 1000px;
 }
 
 article h2 {
     padding: 50px;
+    margin: auto;
+    text-align: center;
     border: 1px solid rgb(187, 187, 187);
     border-radius: 20px 20px 0px 0px;
 }
